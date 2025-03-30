@@ -11,14 +11,7 @@
     "start": "wrangler dev",
     "typecheck": "tsc",
     "typegen": "wrangler types",
-    "prepare": "husky",
-    "lint-staged": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ]
+    "prepare": "husky"
   },
   "dependencies": {
     "@remix-run/cloudflare": "^2.16.3",
@@ -43,7 +36,6 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
     "typescript": "~5.3.3",
