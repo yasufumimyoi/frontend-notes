@@ -79,12 +79,15 @@ module.exports = {
         node: true,
       },
     },
+
     // Generated files
     {
       files: ["worker-configuration.d.ts"],
       rules: {
         "@typescript-eslint/no-empty-interface": "off",
-        "@typescript-eslint/no-empty-object-type": "off"
+        "@typescript-eslint/no-empty-type": "off",
+        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/consistent-type-definitions": "off"
       }
     }
   ],
