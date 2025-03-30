@@ -3,8 +3,6 @@ name: Deploy to Cloudflare Workers
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 jobs:
   check:
@@ -33,7 +31,6 @@ jobs:
 
   deploy:
     needs: check
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     name: Deploy
     steps:
